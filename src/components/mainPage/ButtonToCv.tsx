@@ -7,14 +7,14 @@ import {
   useMotionValue,
 } from "framer-motion";
 import { useEffect } from "react";
-import styles from "@/styles/assets/assets.module.scss";
+import styles from "@/styles/home/home.module.scss";
+import Link from "next/link";
 
 const colors = ["#8A2BE2", "#FF007F", "#4682B4", "#3CB371"];
 
 type Props = {
   buttonName: string;
   icon: any;
-  link: string;
 };
 
 const variants = {
@@ -26,7 +26,7 @@ const variants = {
   },
 };
 
-function DownloadButton({ buttonName, icon, link }: Props) {
+function MainPageButton({ buttonName, icon }: Props) {
   const color = useMotionValue(colors[0]);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ function DownloadButton({ buttonName, icon, link }: Props) {
   const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
   return (
-    <a href={link} className={styles.buttons} target="_blank">
+    <Link href={"/assets"} className={styles.buttons}>
       <motion.button
         variants={variants}
         initial="initial"
@@ -54,8 +54,8 @@ function DownloadButton({ buttonName, icon, link }: Props) {
         <span>{buttonName}</span>
         {icon}
       </motion.button>
-    </a>
+    </Link>
   );
 }
 
-export default DownloadButton;
+export default MainPageButton;

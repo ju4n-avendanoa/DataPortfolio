@@ -1,8 +1,8 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { IoMdDownload } from "react-icons/io";
 import MainPageButton from "@/components/mainPage/MainPageButton";
-import DownloadButton from "@/components/mainPage/DownloadButton";
 import Mobile from "@/components/mainPage/Mobile";
+import ButtonToCv from "@/components/mainPage/ButtonToCv";
 import Laptop from "@/components/mainPage/Laptop";
 import styles from "@/styles/home/home.module.scss";
 import Showcase from "@/components/mainPage/Showcase";
@@ -18,7 +18,8 @@ export default function Home() {
             buttonName={"About me"}
             icon={<FaArrowUpRightFromSquare />}
           />
-          <DownloadButton buttonName={"Download CV"} icon={<IoMdDownload />} />
+
+          <ButtonToCv buttonName={"Download CV"} icon={<IoMdDownload />} />
         </div>
       </section>
     </Showcase>

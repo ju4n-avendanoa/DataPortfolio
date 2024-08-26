@@ -9,7 +9,7 @@ function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.social}>
         <Link
-          href="https://www.linkedin.com/in/ju4n-avendanoa/"
+          href="https://www.linkedin.com/in/juanavendanoa/"
           style={{ textDecoration: "none" }}
           target="_blank"
         >

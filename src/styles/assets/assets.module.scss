@@ -1,0 +1,71 @@
+@import "../mixins.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+  gap: 40px;
+
+  h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-decoration: none;
+    width: 100%;
+
+    @include md {
+      flex-direction: row;
+    }
+
+    a {
+      max-width: fit-content;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: white;
+        background-color: transparent;
+        z-index: 10;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: transform 1s;
+        font-size: 0.8rem;
+        height: 45px;
+        width: 160px;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.04);
+        }
+
+        @include md {
+          font-size: 1rem;
+          padding: 10px 20px;
+          width: 180px;
+        }
+
+        @include lg {
+          width: 200px;
+        }
+      }
+
+      button:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

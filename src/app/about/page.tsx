@@ -94,14 +94,6 @@ function page() {
               image="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
               name="Matplotlib"
             />
-            <Skill
-              image="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-              name="PostgreSQL"
-            />
-            <Skill
-              image="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-              name="MongoDB"
-            />
             <div className={styles.customSkill}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -128,6 +120,55 @@ function page() {
                 </g>
               </svg>
               <h2>Power BI</h2>
+            </div>
+            <div className={styles.customSkill}>
+              <svg
+                className={styles.icon}
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#169154"
+                  d="M29,6H15.744C14.781,6,14,6.781,14,7.744v7.259h15V6z"
+                ></path>
+                <path
+                  fill="#18482a"
+                  d="M14,33.054v7.202C14,41.219,14.781,42,15.743,42H29v-8.946H14z"
+                ></path>
+                <path
+                  fill="#0c8045"
+                  d="M14 15.003H29V24.005000000000003H14z"
+                ></path>
+                <path fill="#17472a" d="M14 24.005H29V33.055H14z"></path>
+                <g>
+                  <path
+                    fill="#29c27f"
+                    d="M42.256,6H29v9.003h15V7.744C44,6.781,43.219,6,42.256,6z"
+                  ></path>
+                  <path
+                    fill="#27663f"
+                    d="M29,33.054V42h13.257C43.219,42,44,41.219,44,40.257v-7.202H29z"
+                  ></path>
+                  <path
+                    fill="#19ac65"
+                    d="M29 15.003H44V24.005000000000003H29z"
+                  ></path>
+                  <path fill="#129652" d="M29 24.005H44V33.055H29z"></path>
+                </g>
+                <path
+                  fill="#0c7238"
+                  d="M22.319,34H5.681C4.753,34,4,33.247,4,32.319V15.681C4,14.753,4.753,14,5.681,14h16.638 C23.247,14,24,14.753,24,15.681v16.638C24,33.247,23.247,34,22.319,34z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M9.807 19L12.193 19 14.129 22.754 16.175 19 18.404 19 15.333 24 18.474 29 16.123 29 14.013 25.07 11.912 29 9.526 29 12.719 23.982z"
+                ></path>
+              </svg>
+              <h2>Microsoft Excel</h2>
             </div>
             <div className={styles.customSkill}>
               <svg
@@ -208,6 +249,85 @@ function page() {
             />
           </SkillsGrid>
           <SkillsGrid title="Learning">
+            <div className={styles.customSkill}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+                className={styles.icon}
+              >
+                <rect
+                  width="1.5"
+                  height="9"
+                  x="22.75"
+                  y="1"
+                  fill="#78909c"
+                ></rect>
+                <rect
+                  width="9"
+                  height="1.5"
+                  x="19"
+                  y="4.75"
+                  fill="#78909c"
+                ></rect>
+                <rect
+                  width="1.5"
+                  height="9"
+                  x="40.75"
+                  y="19"
+                  fill="#5c6bc0"
+                ></rect>
+                <rect
+                  width="9"
+                  height="1.5"
+                  x="37"
+                  y="22.75"
+                  fill="#5c6bc0"
+                ></rect>
+                <rect
+                  width="1.5"
+                  height="9"
+                  x="4.75"
+                  y="19"
+                  fill="#78909c"
+                ></rect>
+                <rect
+                  width="9"
+                  height="1.5"
+                  x="1"
+                  y="22.75"
+                  fill="#78909c"
+                ></rect>
+                <rect
+                  width="1.5"
+                  height="9"
+                  x="22.75"
+                  y="37"
+                  fill="#5c6bc0"
+                ></rect>
+                <rect
+                  width="9"
+                  height="1.5"
+                  x="19"
+                  y="40.75"
+                  fill="#5c6bc0"
+                ></rect>
+                <rect width="17" height="3" x="15" y="22" fill="#e8762d"></rect>
+                <rect width="3" height="17" x="22" y="15" fill="#e8762d"></rect>
+                <rect width="2" height="14" x="11" y="6" fill="#ffa000"></rect>
+                <rect width="14" height="2" x="5" y="12" fill="#ffa000"></rect>
+                <rect width="2" height="14" x="34" y="6" fill="#607d8b"></rect>
+                <rect width="14" height="2" x="28" y="12" fill="#607d8b"></rect>
+                <rect width="2" height="14" x="11" y="27" fill="#c62828"></rect>
+                <rect width="14" height="2" x="5" y="33" fill="#c62828"></rect>
+                <rect width="2" height="14" x="34" y="27" fill="#0d47a1"></rect>
+                <rect width="14" height="2" x="28" y="33" fill="#0d47a1"></rect>
+              </svg>
+              <h2>Tableu</h2>
+            </div>
             <Skill
               image="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
               name="Scikitlearn"
