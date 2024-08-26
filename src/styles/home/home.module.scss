@@ -1,0 +1,214 @@
+@import "../mixins";
+$photo-size-xs: 150px;
+$photo-size-sm: 175px;
+$photo-size-md: 200px;
+$photo-size-lg: 250px;
+$blob-backgorund-opacity: 0.8;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  color: white;
+  padding: 60px 10px 30px;
+  gap: 40px;
+  position: relative;
+  z-index: 20;
+
+  @include lg {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px 15% 30px;
+    gap: 60px;
+  }
+
+  @include xl {
+    padding: 60px 20% 30px;
+  }
+
+  @include xxl {
+    padding: 60px 30% 30px;
+  }
+
+  .mobile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    z-index: 10;
+    width: 100%;
+
+    @include lg {
+      display: none;
+    }
+
+    .name {
+      font-size: 1.3rem;
+      height: auto;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      z-index: 10;
+      background-color: #121212;
+
+      @include sm {
+        font-size: 1.5rem;
+      }
+
+      @include md {
+        height: auto;
+      }
+
+      h1 {
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    .intro {
+      font-size: 1rem;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @include sm {
+        font-size: 1.1rem;
+      }
+
+      @include md {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .laptop {
+    display: none;
+
+    @include lg {
+      display: flex;
+      gap: 90px;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    @include xl {
+      gap: 100px;
+    }
+
+    .text {
+      @include lg {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        height: 100%;
+      }
+
+      .name {
+        @include lg {
+          display: flex;
+          height: auto;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 10px;
+          z-index: 10;
+          background-color: #121212;
+        }
+
+        h1 {
+          @include lg {
+            font-weight: bold;
+            text-align: left;
+            width: 100%;
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      .intro {
+        @include lg {
+          font-size: 1.2rem;
+          text-align: left;
+          background-color: #121212;
+        }
+      }
+    }
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 9999px;
+      overflow: hidden;
+      background-color: white;
+      object-fit: cover;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    width: 100%;
+
+    @include md {
+      flex-direction: row;
+    }
+
+    @include lg {
+      justify-content: flex-start;
+    }
+
+    a {
+      max-width: fit-content;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: white;
+        background-color: transparent;
+        z-index: 10;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: transform 1s;
+        font-size: 0.8rem;
+        height: 45px;
+        width: 160px;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.04);
+        }
+
+        @include md {
+          font-size: 1rem;
+          padding: 10px 20px;
+          width: 180px;
+        }
+
+        @include lg {
+          width: 200px;
+        }
+      }
+
+      button:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

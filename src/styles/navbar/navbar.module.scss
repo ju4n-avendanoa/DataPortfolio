@@ -1,0 +1,123 @@
+@import "../mixins";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #121212;
+  height: 60px;
+
+  @include lg {
+    padding: 20px 100px;
+  }
+
+  .logo {
+    display: none;
+
+    @include sm {
+      display: block;
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 14px;
+
+    a {
+      height: 100%;
+    }
+
+    h4 {
+      color: white;
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+
+    @include lg {
+      display: none;
+    }
+
+    .bg {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      background-color: black;
+      width: 200px;
+
+      @include md {
+        width: 300px;
+      }
+
+      .links {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+        list-style-type: none;
+
+        .list {
+          color: white;
+          text-decoration: none;
+          font-size: 1.1rem;
+
+          @include sm {
+            font-size: 1.3rem;
+          }
+
+          @include md {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .button {
+      position: fixed;
+      right: 38px;
+      top: 20px;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      background-color: transparent;
+      border: 0;
+
+      .svg .path {
+        color: white;
+      }
+    }
+  }
+
+  .links {
+    display: none;
+
+    @include lg {
+      font-size: 1.1rem;
+      display: flex;
+      list-style-type: none;
+      gap: 38px;
+    }
+
+    .list {
+      color: white;
+      text-decoration: none;
+    }
+
+    .active {
+      font-size: 1.1rem;
+      color: #6fa2cc;
+      text-underline-offset: 8px;
+    }
+  }
+}
