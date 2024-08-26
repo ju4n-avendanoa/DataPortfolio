@@ -44,8 +44,8 @@ function Mobile() {
         passion for data analysis drives me to create impactful solutions.
         <br />
         <br />
-        Let's collaborate on data-driven projects or simply connect. I'm here to
-        make data work for you!
+        Let&apos;s collaborate on data-driven projects or simply connect.
+        I&apos;m here to make data work for you!
       </motion.p>
     </motion.section>
   );

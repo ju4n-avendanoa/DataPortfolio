@@ -44,8 +44,8 @@ function Laptop() {
           My passion for data analysis drives me to create impactful solutions.
           <br />
           <br />
-          Let's collaborate on data-driven projects or simply connect. I'm here
-          to make data work for you!
+          Letd&apos;s collaborate on data-driven projects or simply connect.
+          Id&apos;m here to make data work for you!
         </motion.p>
       </div>
       <Photo />
