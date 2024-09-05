@@ -14,8 +14,9 @@ const items = [
     title: "Olympic Games Data Analysis",
     img: "https://res.cloudinary.com/dhjqarghy/image/upload/v1724258803/data/DALL_E_2024-08-21_11.46.33_-_A_clean_and_modern_image_focusing_on_a_single_large_Olympic_ring_specifically_the_middle_ring_representing_the_Olympic_Games._The_background_should_aczgms.webp",
     desc: "This project conducts an exploratory data analysis of the Olympic Games using Python and libraries such as Pandas, Matplotlib, and Seaborn. It examines the distribution of medals by country, the evolution of female participation, and the relationship between athletes' physical characteristics and their sports. The analysis also covers variations in medalists' ages, the inclusion of new sports, and performance differences by gender. The goal is to derive meaningful insights into success and participation in the Olympic Games over time.",
-    github: "https://github.com/ju4n-avendanoa/Data_Olympics",
-    productionLink: "https://worldbnb.vercel.app",
+    github:
+      "https://app.powerbi.com/groups/me/reports/97b9bc78-7031-4220-b835-0c0485e67d39/2c9758735ca8c842a5b9?experience=power-bi",
+    productionLink: "",
   },
   {
     id: 2,
@@ -23,7 +24,8 @@ const items = [
     img: "https://res.cloudinary.com/dhjqarghy/image/upload/v1724259817/data/DALL_E_2024-08-21_12.03.10_-_A_conceptual_image_representing_a_bank_money_and_customers._The_image_should_include_visual_elements_like_a_bank_building_stacks_of_money_and_silh_pzx72m.webp",
     desc: "In this project, a dataset is analyzed to understand the factors that may influence customer churn at a bank. Key characteristics such as financial behavior, bank activity, and demographic attributes of customers are examined to identify patterns related to their decision to leave the bank. Through visualization techniques, the project aims to gain deeper insights into these factors and provide valuable information that can help improve customer retention.",
     github: "https://github.com/ju4n-avendanoa/Bank_Churn",
-    productionLink: "https://my-task-organizer.vercel.app",
+    productionLink:
+      "https://app.powerbi.com/groups/me/reports/f7098c6a-479d-42a0-b156-3bce49c31975/0546b7d59363b6b23211?experience=power-bi",
   },
   {
     id: 3,
@@ -31,7 +33,8 @@ const items = [
     img: "https://res.cloudinary.com/dhjqarghy/image/upload/v1724264545/data/Netflix-Logo_ir4jcf.jpg",
     desc: "This project analyzes a dataset of Netflix titles with the aim of understanding the characteristics and patterns of the movies and shows available on the platform. Key aspects such as release year, duration, age ratings, and content categories are explored. Through visualization techniques, the project seeks to gain deeper insights into trends within Netflix's catalog, providing valuable information that could help better understand the content offerings and audience preferences.",
     github: "https://github.com/ju4n-avendanoa/Data_Netflix",
-    productionLink: "https://footballresults.vercel.app",
+    productionLink:
+      "https://app.powerbi.com/groups/me/reports/910a8c08-3182-477a-acb4-6a7451807154/68a419aa1563860a0172?experience=power-bi",
   },
 ];
 
@@ -76,11 +79,11 @@ const Project = ({ item }: { item: any }) => {
           <p>{item.desc}</p>
           <div className={styles.buttons}>
             <Button text="GitHub" icon={<FaGithub />} link={item.github} />
-            {/* <Button
-              text="Live"
+            <Button
+              text="Dashboard"
               icon={<BsLink45Deg />}
               link={item.productionLink}
-            /> */}
+            />
           </div>
         </motion.div>
       </div>
