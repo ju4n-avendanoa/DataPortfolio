@@ -391,7 +391,7 @@ function page() {
             icon={<GoGear className={styles.icon} />}
           />
           <EducationCard
-            degree="Data Analyst (virtual course)"
+            degree="Data Analyst (Online course)"
             year="August 2022"
             university="Codecademy"
             icon={<GoGear className={styles.icon} />}
