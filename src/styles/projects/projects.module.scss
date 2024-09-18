@@ -46,7 +46,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 111px);
+    padding: 20px 0px;
 
     @include md {
       overflow: hidden;
@@ -67,7 +67,8 @@
       max-width: 500px;
 
       @include md {
-        width: 50%;
+        width: 100%;
+        margin: auto;
       }
 
       @include lg {

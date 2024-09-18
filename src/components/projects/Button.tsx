@@ -35,13 +35,14 @@ function Button({ text, icon, link }: Props) {
     <Link href={link} target="_blank" style={{ textDecoration: "none" }}>
       <motion.button
         type="submit"
+        title={text}
         style={{
           border,
           color: textColor,
           boxShadow,
+          width: "auto",
         }}
       >
-        <span>{text}</span>
         {icon}
       </motion.button>
     </Link>

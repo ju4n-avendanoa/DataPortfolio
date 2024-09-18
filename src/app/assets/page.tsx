@@ -13,14 +13,14 @@ function page() {
             buttonName={"English CV"}
             icon={<IoMdDownload />}
             link={
-              "https://res.cloudinary.com/dhjqarghy/image/upload/v1725910710/data/juan_data_en_uxt0fj.pdf"
+              "https://res.cloudinary.com/dhjqarghy/image/upload/v1726618134/data/juan_data_en_j0mkhc.pdf"
             }
           />
           <DownloadButton
             buttonName={"Spanish CV"}
             icon={<IoMdDownload />}
             link={
-              "https://res.cloudinary.com/dhjqarghy/image/upload/v1725910710/data/Juan_data_es_ezt9wx.pdf"
+              "https://res.cloudinary.com/dhjqarghy/image/upload/v1726618134/data/Juan_data_es_qikeon.pdf"
             }
           />
         </div>

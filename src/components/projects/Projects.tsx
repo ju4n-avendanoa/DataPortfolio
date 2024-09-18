@@ -2,11 +2,13 @@
 
 import { useRef } from "react";
 import styles from "@/styles/projects/projects.module.scss";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import ImageWithFallback from "../ImageWithFallback";
 import Button from "./Button";
 import { FaGithub } from "react-icons/fa6";
 import { BsLink45Deg } from "react-icons/bs";
+import { FaRegFilePdf } from "react-icons/fa";
+import { SiPowerbi } from "react-icons/si";
 
 const items = [
   {
@@ -16,7 +18,9 @@ const items = [
     desc: "This project conducts an exploratory data analysis of the Olympic Games using Python and libraries such as Pandas, Matplotlib, and Seaborn. It examines the distribution of medals by country, the evolution of female participation, and the relationship between athletes' physical characteristics and their sports. The analysis also covers variations in medalists' ages, the inclusion of new sports, and performance differences by gender. The goal is to derive meaningful insights into success and participation in the Olympic Games over time.",
     github:
       "https://app.powerbi.com/groups/me/reports/97b9bc78-7031-4220-b835-0c0485e67d39/2c9758735ca8c842a5b9?experience=power-bi",
-    productionLink: "",
+    productionLink:
+      "https://app.powerbi.com/groups/me/reports/97b9bc78-7031-4220-b835-0c0485e67d39/2c9758735ca8c842a5b9?experience=power-bi",
+    pdf: "https://res.cloudinary.com/dhjqarghy/image/upload/v1726616073/data/olympics_ffzofl.pdf",
   },
   {
     id: 2,
@@ -26,6 +30,7 @@ const items = [
     github: "https://github.com/ju4n-avendanoa/Bank_Churn",
     productionLink:
       "https://app.powerbi.com/groups/me/reports/f7098c6a-479d-42a0-b156-3bce49c31975/0546b7d59363b6b23211?experience=power-bi",
+    pdf: "https://res.cloudinary.com/dhjqarghy/image/upload/v1726616073/data/bank_u2gkhe.pdf",
   },
   {
     id: 3,
@@ -35,6 +40,7 @@ const items = [
     github: "https://github.com/ju4n-avendanoa/Data_Netflix",
     productionLink:
       "https://app.powerbi.com/groups/me/reports/910a8c08-3182-477a-acb4-6a7451807154/68a419aa1563860a0172?experience=power-bi",
+    pdf: "https://res.cloudinary.com/dhjqarghy/image/upload/v1726616073/data/netflix_cndf27.pdf",
   },
 ];
 
@@ -80,10 +86,11 @@ const Project = ({ item }: { item: any }) => {
           <div className={styles.buttons}>
             <Button text="GitHub" icon={<FaGithub />} link={item.github} />
             <Button
-              text="Dashboard"
-              icon={<BsLink45Deg />}
+              text="Power BI"
+              icon={<SiPowerbi />}
               link={item.productionLink}
             />
+            <Button text="PDF" icon={<FaRegFilePdf />} link={item.pdf} />
           </div>
         </motion.div>
       </div>
